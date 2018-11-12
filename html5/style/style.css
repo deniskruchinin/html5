@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,800');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
 .container {
@@ -17,6 +17,7 @@ header {
 }
 
 header a {
+
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -52,6 +53,7 @@ nav ul {
 
 
 nav li a {
+
     color: #ffffff;
     font-family: Montserrat;
     font-size: 14px;
@@ -59,6 +61,7 @@ nav li a {
     margin-right: 30px;
     text-decoration: none;
 }
+
 
 nav li a:hover {
     color: #c7b299;
@@ -384,15 +387,343 @@ aside section p {
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 20px 37px 21px 39px;
+    padding: 20px 37px 20px 39px;
     box-shadow: inset 0 -3px 0 #736357;
     border-radius: 3px;
     background: #998675;
     border-radius: 5px;
 }
-.purchase:hover{
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+.purchase:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.purchase:active{
-     box-shadow: none;
+
+.purchase:active {
+    box-shadow: none;
 }
+
+.latest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spisok {
+    display: flex;
+    flex-direction: row;
+    width: 625px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.spisok button {
+
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    background: none;
+}
+
+.spisok button:hover {
+    color: #ffffff;
+    background-color: #998675;
+}
+
+.stati {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stati a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    width: 370px;
+}
+
+.stati img {
+
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.podrobno {
+    position: relative;
+    background-color: #fbfaf8;
+    padding: 30px 0 30px 30px;
+
+}
+
+.podrobno span {
+
+    color: #c7b299;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.podrobno p {
+    text-align: left;
+    margin: 0px;
+    padding: 0;
+    color: #d1d1d1;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.podrobno:after {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 0px;
+    border: 30px solid transparent;
+    border-bottom: 20px solid #fbfaf8;
+}
+
+.stati a:hover .simg {
+    filter: brightness(50%);
+}
+
+.stati a:hover .podrobno {
+    background: #362f2d;
+}
+
+.stati a:hover .podrobno:after {
+    border-bottom: 20px solid #362f2d;
+}
+
+.video {
+
+    margin-top: 80px;
+    position: relative;
+
+}
+
+.videotxt {
+    margin-top: 330px;
+    margin-left: 660px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.videotxt h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.videotxt p {
+    text-align: center;
+    display: block;
+    width: 552px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.video-play-btn {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 210px;
+    left: 900px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.2) url(../img/icon-play.png) no-repeat 50% 50%;
+}
+
+.video-play-btn--hide {
+    display: none;
+}
+
+.poster {
+    filter: brightness(60%);
+    position: absolute;
+    top: 0px;
+    background: url(../img/photovideo.png);
+    height: 706px;
+    width: 100%;
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 80px;
+}
+
+.textmob {
+    margin-top: 105px;
+    min-width: 657px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobzag {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 40px;
+    color: #555555;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.mobp {
+    text-align: left;
+    hyphens: auto;
+    margin: 0px;
+    margin-bottom: 25px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.textmob ul {
+    margin-left: 60px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    list-style-image: url(../img/01.png);
+}
+
+.chetchik {
+    padding-top: 69px;
+    padding-bottom: 60px;
+    justify-content: center;
+    display: flex;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.chetchik figure {
+    margin-left: 50px;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chetchik figcaption {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cifri {
+    margin-top: 30px;
+    margin-bottom: 21px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.cifriopisanie {
+
+    word-break: break-all;
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.chetchik figcaption:after {
+    position: absolute;
+    bottom: 0px;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.resent {
+    padding-top: 82px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resentstat {
+    width: 100%;
+}
+
+
+.resentstat article figure figcaption {
+    padding-left: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f8f8f8;
+    box-sizing: border-box;
+    background-color: rgba(119, 119, 119, 0);
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.hresent {
+    font-family: Raleway;
+    color: #555555;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.resentp {
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    width: 297px;
+    margin-bottom: 0px;
+    margin-bottom: 27px;
+}
+
+.resent a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #c7b299;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.resent a:after {
+    position: absolute;
+    left: 85px;
+    content: "";
+    border: 7px solid transparent;
+    border-left: 7px solid #c7b299;
+}
+
